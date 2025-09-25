@@ -1,0 +1,33 @@
+{
+  "name": "n8n-nodes-random-int",
+  "version": "1.0.0",
+  "description": "Random integer generator node for n8n (inclusive min/max) using crypto.randomInt",
+  "keywords": [
+    "n8n-community-node",
+    "random",
+    "integer",
+    "crypto"
+  ],
+  "author": "Diogo",
+  "license": "MIT",
+  "main": "dist/RandomInteger.node.js",
+  "types": "dist/RandomInteger.node.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -w",
+    "pack": "npm run build && npm pack"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "@types/node": "^20.11.0"
+  },
+  "n8n": {
+    "nodes": [
+      "dist/RandomInteger.node.js"
+    ]
+  }
+}
